@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     .things > .content {
+      float: left;
+      width: 50%;
+      height: 500px;
+      -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;    
+        box-sizing: border-box;
+      position: relative;
+    }
+    
+    .things > .content h1 {
+      font-family: 'Arial', sans-serif;
+      text-transform: uppercase;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      height: 150px;
+      color: #89323B;
+    }
+    
+    /* Arrow */
+    
+    .arrow {
+        position: relative;
+      /* margin: 250px; */
+      width: 100px;
+    }
+    
+    .arrow .curve {
+        border: 2px solid #BE5F4B;
+        border-color: transparent transparent #BE5F4B transparent;
+        width: 360px;
+        height: 1000px;
+        border-radius: 230px 230px 500px 500px;
+        transform: rotate(-10deg);
+        margin-top: -950px;
+    }
+    
+    .arrow .point {
+        position: absolute;
+        margin-top: 650px;
+        left: 40px;
+        top: 315px;
+    }
+    
+    .arrow .point:before, .arrow .point:after {
+        border: 1px solid #BE5F4B;
+        height: 25px;
+        content: "";
+        position: absolute;
+    }
+    
+    .arrow .point:before {
+        top: -11px;
+        left: -11px;
+        transform:rotate(-0deg);
+        -webkit-transform:rotate(-0deg);
+      -moz-transform:rotate(-0deg);
+      -ms-transform: rotate(-0deg);
+    }
+    
+    .arrow .point:after {
+        margin-left: 340px;
+      top: -35px;
+        left: -25px;
+        transform:rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      -moz-transform:rotate(90deg);
+      -ms-transform: rotate(90deg);
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="transducer-body">
+    <div class="things">
+      <div class="content">
+        <div class="arrow">
+          <div class="curve"></div>
+          <div class="point"></div>
+        </div>
+      </div> 
+      <div class="content">
+        <!-- <h1>Curved Arrow</h1> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

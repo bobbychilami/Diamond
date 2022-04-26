@@ -1,0 +1,17 @@
+{
+    "name": "Transducer",
+    "version": "1.0.0",
+    "description": "This extension helps to connect web2 marketplace to web3.",
+    "manifest_version": 3,
+    "author": "Bobby Chilami",
+    "action":{
+        "default_popup": "src/index.html",
+        "default_title": "Lets Start"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["https://opensea.io/"],
+            "js" : ["contentScript.js"]
+        }
+    ]
+}

@@ -4,7 +4,7 @@ const btn = document.getElementById("payment-button");
 // const form = document.getElementById("payment-form");
 let userData = {
     idempotencyKey : generateUUID(),
-    keyId : "key1",
+    keyId : "",
     metadata : {
         sessionId : "",
         ipAddress : "",
@@ -45,7 +45,7 @@ btn.addEventListener('click',()=>{
     userData.amount.amount = amount;
     userData.metadata.email = email;
     userData.metadata.phoneNumber = mobile;
-
+    userData.source.id = document.getElementById("id").value;
     options.body = JSON.stringify(userData);
 
     console.log(userData);

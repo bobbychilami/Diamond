@@ -12,18 +12,20 @@ nav{
 }
 button{
     background-color: #0C4160;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 5px;
     color: white;
     padding: 5px;
     margin: 5px;
     font-weight: bold;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    transition: 0.2s;
 }
 button:hover{
     background-color: white;
-    border: solid 2px white;
+    border: solid 3px #0C4160;
     color: #0C4160;
+    font-weight: bold;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
     transition: 0.2s;
 }
@@ -71,9 +73,13 @@ body {
 
 a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
-
+a:hover{
+    /* color: white; */
+    font-weight: bold;
+    padding: 10px;
+}
 p {
     margin: 0px
 }

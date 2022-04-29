@@ -9,10 +9,9 @@
 // "chrome-extension://nihbaiopngbdfabojfdpacmhnjcfoj/src/index.html"
 // window.open("chrome-extension://nihbaiopngbdfabojfdpacmhnjcfoj/src/index.html");
 
-const mainContent = document.getElementById("main");
+let mainContent = document.getElementById("main");
 
-
-mainContent.innerHTML = `
+let injectCode = `
 
 <div id="diamond-body">
 <div class="body1">
@@ -61,8 +60,9 @@ mainContent.innerHTML = `
   </ul>
 </div>
 
-</div>` + mainContent.innerHTML;
+</div>`;
 
+mainContent.innerHTML = injectCode + mainContent.innerHTML;
 const style = document.createElement('style');
 style.innerHTML = `
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
@@ -112,6 +112,7 @@ style.innerHTML = `
 
 .li1:hover .body2{
   display: block;
+  transition : 0.2s;
 }`;
 document.head.appendChild(style);
 

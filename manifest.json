@@ -10,8 +10,11 @@
     },
     "content_scripts" : [
         {
-            "matches" : ["https://opensea.io/"],
-            "js" : ["contentScript.js"]
+            "matches" : ["https://opensea.io/","https://www.ebay.com/"],
+            "js" : ["contentScript.js","contentScript.js"]
         }
-    ]
+    ],
+    "icons": { "16": "diamond-logo.png",
+        "48": "diamond-logo.png",
+       "128": "diamond-logo.png" }
 }

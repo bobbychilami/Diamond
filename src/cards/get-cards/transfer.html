@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer</title>
+    
+</head>
+<body>
+    <div class="chain">
+        Select a crypto chain and currency: 
+        <select name="selectChain" id="selectChain">
+            <option value="ALGO">ALGO</option>
+            <option value="AVAX">AVAX</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="FLOW">FLOW</option>
+            <option value="HBAR">HBAR</option>
+            <option value="SOL">SOL</option>
+            <option value="XLM">XLM</option>
+            <option value="TRX">TRX</option>
+        </select>
+    </div>
+    <div class="currency">
+        Select Currency: 
+        <select name="selectCurrency" id="selectCurrency">
+            <option value="USD">USD</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+        </select>
+    </div>
+
+    <button id="selectButton">
+        Select
+    </button>
+    <script src="transfer.js" type="module"></script>
+
+</body>
+</html>

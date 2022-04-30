@@ -1,5 +1,7 @@
 # Diamond
 
+![diamond-logo](https://user-images.githubusercontent.com/59655369/166119181-dfa41355-8e86-41e6-a59b-6614f2a0bf2d.png)
+
 Diamond gem is a Chrome browser extension which can be used to make payments, create
 wallets, transfer digital money to blockchains or convert fiat money to digital money(USDC).
 Experience a frictionless way to explore blockchain assets, web3 marketplaces and buy NFTs
